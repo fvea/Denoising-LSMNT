@@ -77,8 +77,6 @@ def plot_envelope_signal(signal, sr, imf_idx, rpm=None, num_balls=None, fft_xlim
         plt.axvline(ir_fault_freq, c='black', ls='--', linewidth=2, label="Inner Race")
         plt.axvline(or_fault_freq, c='red', ls='--', linewidth=2, label="Outer Race")
         plt.axvline(bp_fault_freq, c='yellow', ls='--', linewidth=2, label="Ball Pass")
-        plt.axvline(bp_fault_freq * 2, c='yellow', ls='--', linewidth=2)
-        plt.axvline(bp_fault_freq * 3, c='yellow', ls='--', linewidth=2)
         plt.axvline(cg_fault_freq, c='orange', ls='--', linewidth=2, label="Cage")
         plt.legend()
         
